@@ -1,0 +1,437 @@
+.kategorier_wrapper {
+  display: grid;
+  grid-template-rows: auto; /* Automatisk højde til rækkerne */
+  padding-top: 10%;
+}
+.kategorier_wrapper a {
+  display: inline-block;
+  padding: 5%; /* Juster padding efter behov */
+  color: #333; /* Tekstfarve */
+  text-decoration: none; /* Fjern understregning */
+}
+
+.toej,
+.fodtoej,
+.tilbehoer,
+.gratis,
+.personlig_pleje,
+.sport {
+  padding-bottom: 5%;
+}
+
+/* produktliste.html */
+.produkt1 {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+.produktliste_overskrift_toej {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+.billede_produkt {
+  grid-row: 4 / span 8;
+  grid-column: 1 / span 2;
+}
+.billede_produkt img {
+  width: 100%;
+}
+
+.model_overskrift,
+.pris_overskrift,
+.udsalg_overskrift,
+.usagetype_overskrift {
+  padding-bottom: 2%;
+}
+.model_navn_p_txt,
+.pris_p_txt,
+.udsalg_p_txt,
+.usagetype_p_txt {
+  padding-bottom: 5%;
+}
+
+.model {
+  grid-row: 12;
+  grid-column: 1 / span 2;
+}
+.pris {
+  grid-row: 14;
+  grid-column: 1;
+}
+.usagetype {
+  grid-row: 14;
+}
+.mere {
+  grid-row: 15;
+}
+.billede_produkt2 {
+  grid-row: 16 / span 8;
+  grid-column: 1 / span 2;
+}
+.billede_produkt2 img {
+  width: 100%;
+}
+.model2 {
+  grid-row: 24;
+  grid-column: 1 / span 2;
+}
+.pris2 {
+  grid-row: 25;
+  grid-column: 1;
+}
+.usagetype2 {
+  grid-row: 25;
+}
+.mere2 {
+  grid-row: 26;
+}
+.billede_produkt3 {
+  grid-row: 27 / span 8;
+  grid-column: 1 / span 2;
+}
+.billede_produkt3 img {
+  width: 100%;
+}
+.model3 {
+  grid-row: 35;
+  grid-column: 1 / span 2;
+}
+.pris3 {
+  grid-row: 36;
+  grid-column: 1;
+}
+.usagetype3 {
+  grid-row: 36;
+}
+.mere3 {
+  grid-row: 37;
+}
+.billede_produkt4 {
+  grid-row: 38 / span 8;
+  grid-column: 1 / span 2;
+}
+.billede_produkt4 img {
+  width: 100%;
+}
+.model4 {
+  grid-row: 46;
+  grid-column: 1 / span 2;
+}
+.pris4 {
+  grid-row: 47;
+  grid-column: 1;
+}
+.usagetype4 {
+  grid-row: 47;
+}
+.mere4 {
+  grid-row: 48;
+}
+
+/* produkt.html */
+.produkt_se_mere_wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  display: grid;
+  gap: 10px;
+  background-color: gainsboro;
+  opacity: 105%;
+}
+.model_se_mere {
+  padding-left: 4%;
+  font-size: 1.6rem;
+}
+.billede_produkt_se_mere {
+  padding-left: 5%;
+}
+.billede_produkt_se_mere img {
+  width: 90%;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .kategorier_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+  }
+  .kategorier_overskrift {
+    text-align: center;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+  .toej {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  .fodtoej {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  .tilbehoer {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  .gratis {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  .personlig_pleje {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  .sport {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  /* Just for visual representation */
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+
+  .toej a:hover,
+  .fodtoej a:hover,
+  .tilbehoer a:hover,
+  .gratis a:hover,
+  .personlig_pleje a:hover,
+  .sport a:hover {
+    text-decoration: underline;
+    color: #9d9d28;
+  }
+
+  .hjemmesidens_navn {
+    padding-top: 5%;
+    margin-left: 3%;
+  }
+  .breadcrumlist {
+    display: inline-block; /* Eller brug "display: inline;" */
+    letter-spacing: 2px;
+    margin-left: 5%;
+  }
+
+  /* produktliste.html */
+  .produkt1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .produktliste_overskrift_toej {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+  }
+
+  .billede_produkt {
+    grid-row: 2 / span 8;
+    grid-column: 1;
+  }
+  .billede_produkt img {
+    width: 100%;
+  }
+  .model {
+    grid-row: 10 / span 2;
+    grid-column: 1;
+  }
+  .pris {
+    grid-row: 12 / span 2;
+    grid-column: 1;
+  }
+  .usagetype {
+    grid-row: 14 / span 2;
+    grid-column: 1;
+  }
+  .mere {
+    grid-row: 16;
+    grid-column: 1;
+  }
+  .billede_produkt2 {
+    grid-row: 2 / span 8;
+    grid-column: 2;
+  }
+  .billede_produkt2 img {
+    width: 100%;
+  }
+  .model2 {
+    grid-row: 10 / span 2;
+    grid-column: 2;
+  }
+  .pris2 {
+    grid-row: 12 / span 2;
+    grid-column: 2;
+  }
+  .usagetype2 {
+    grid-row: 14 / span 2;
+    grid-column: 2;
+  }
+  .mere2 {
+    grid-row: 16;
+    grid-column: 2;
+  }
+  .billede_produkt3 {
+    grid-row: 2 / span 8;
+    grid-column: 3;
+  }
+  .billede_produkt3 img {
+    width: 100%;
+  }
+  .model3 {
+    grid-row: 10 / span 2;
+    grid-column: 3;
+  }
+  .pris3 {
+    grid-row: 12 / span 2;
+    grid-column: 3;
+  }
+  .usagetype3 {
+    grid-row: 14 / span 2;
+    grid-column: 3;
+  }
+  .mere3 {
+    grid-row: 16;
+    grid-column: 3;
+  }
+  .billede_produkt4 {
+    grid-row: 2 / span 8;
+    grid-column: 4;
+  }
+  .billede_produkt4 img {
+    width: 100%;
+  }
+  .model4 {
+    grid-row: 10;
+    grid-column: 4;
+  }
+  .pris4 {
+    grid-row: 12 / span 2;
+    grid-column: 4;
+  }
+  .usagetype4 {
+    grid-row: 14 / span 2;
+    grid-column: 4;
+  }
+  .mere4 {
+    grid-row: 16;
+    grid-column: 4;
+  }
+
+  /* produkt.html */
+  .produkt_se_mere_wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: gainsboro;
+    opacity: 105%;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .model_se_mere {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    padding-left: 5%;
+
+    font-size: 1.9rem;
+  }
+  .billede_produkt_se_mere {
+    grid-row: 2 / span 13;
+    grid-column: 1 / span 2;
+    padding-left: 5%;
+  }
+  .billede_produkt_se_mere img {
+    width: 90%;
+  }
+  .pris_se_mere {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .usagetype_se_mere {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .brand_se_mere,
+  .farve_se_mere {
+    grid-row: 4;
+  }
+  .aargang_se_mere,
+  .season_se_mere {
+    grid-row: 5;
+  }
+  .inventarnummer_se_mere,
+  .lagerstatus_se_mere {
+    grid-row: 6;
+  }
+  .tilfoj_kurv {
+    grid-row: 9;
+  }
+
+  .product_name {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    padding-top: 2%;
+    padding-left: 2%;
+  }
+  .product_image img {
+    width: 100%;
+    padding-left: 5%;
+  }
+  .product_image {
+    grid-row: 2 / span 3;
+    grid-column: 1;
+  }
+  .purchaseMe {
+    grid-row: 3 / span 2;
+    grid-column: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .purchaseMe_model_name {
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+  }
+  form {
+    margin-top: 20%;
+  }
+
+  .breadcrumlist_product {
+    padding-bottom: 2%;
+    display: inline-block; /* Eller brug "display: inline;" */
+    letter-spacing: 2px;
+    margin-left: 5%;
+  }
+}

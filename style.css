@@ -1,0 +1,235 @@
+/* RESETTER AL MARGIN + PADDING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1350px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #404040;
+}
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #404040;
+}
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+}
+
+.footer_txt {
+  font-size: 1rem;
+  padding-left: 2%;
+  text-transform: uppercase;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+.footer_txt_produkthtml {
+  font-size: 1rem;
+  padding-left: 2%;
+  text-transform: uppercase;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.index_billede img {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  padding-top: 2%;
+  height: 62vh;
+}
+
+.mere a,
+.mere2 a,
+.mere3 a,
+.mere4 a {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.kategorier_wrapper a {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #404040;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.kategorier_wrapper a :hover {
+  color: #9d9d28;
+  transform: translateY(-3px);
+}
+
+/* produkt.html */
+.model_se_mere {
+  font-size: 1.9rem;
+  font-family: "Inter", sans-serif;
+}
+.pris_se_mere_overskrift,
+.usagetype_se_mere_overskrift,
+.brand_se_mere_overskrift,
+.farve_se_mere_overskrift,
+.aargang_se_mere_overskrift,
+.inventarnummer_se_mere_overskrift,
+.season_se_mere_overskrift,
+.lagerstatus_se_mere_overskrift {
+  font-size: 1.4rem;
+  color: #404040;
+  font-family: "Inter", sans-serif;
+}
+.pris_se_mere_p_txt,
+.usagetype_se_mere_p_txt,
+.lagerstatus_se_mere_p_txt,
+.inventarnummer_se_mere_p_txt,
+.season_se_mere_p_txt,
+.aargang_se_mere_p_txt,
+.farve_se_mere_p_txt,
+.brand_se_mere_p_txt {
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
+}
+
+.tilfoj_kurv {
+  font-size: 1.5rem;
+  background-color: ghostwhite;
+  border-radius: 10px 10px;
+  width: 70%;
+  height: 125%;
+  text-align: center;
+  padding-top: 5%;
+}
+.tilfoj_kurv a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+a :hover {
+  color: darkkhaki;
+}
+
+/* SOLDOUT */
+.soldout {
+  position: absolute;
+  top: 38%;
+  background: #666768;
+  width: 10%;
+  padding: 0.6rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-align: end;
+  z-index: 2;
+}
+
+/* DISCOUNT */
+.discount {
+  position: absolute;
+  top: 38%;
+  background: #f9f639d1;
+  width: 8%;
+  padding: 0.6rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-align: end;
+  z-index: 1;
+}
+
+.breadcrumlist a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #9d9d28;
+  transition: transform 0.2s ease;
+}
+.breadcrumlist a:hover {
+  color: #333;
+  transform: translateY(-3px);
+}
+
+.hjemmesidens_navn {
+  font-size: 3.5rem;
+  color: #333;
+}
+.mere a {
+  color: #9d9d28;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #404040;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.gender,
+.category,
+.purchaseMe_brand,
+.purchaseMe_subcategory,
+.purchaseMe_articletype {
+  font-size: 1rem;
+}
+.purchaseMe {
+  background: #a8a6a6;
+  border: 2px whitesmoke solid;
+}
+label {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+select {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  padding: 2%;
+  padding-left: 1%;
+  border: 2px solid;
+  border-radius: 10px;
+  height: 1.9rem;
+  border: 2px white solid;
+  margin-left: 35%;
+}
+button {
+  padding: 2%;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px white solid;
+}
+button:hover {
+  cursor: pointer;
+}
+.breadcrumlist_product a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #9d9d28;
+}
+.breadcrumlist_product a:hover {
+  color: #333;
+  text-decoration: dotted;
+}
